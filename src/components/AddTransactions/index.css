@@ -1,0 +1,96 @@
+.add-transaction-button {
+  background-color: #2d60ff;
+  border: 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  cursor: pointer;
+}
+.add-transaction-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "inter";
+  font-size: 17px;
+}
+.add-transaction-plus-log {
+  margin-right: 3px;
+}
+.add-transactions-main-container {
+  background-color: #cccccc;
+  border-radius: 15px;
+  padding: 30px;
+}
+.add-transactions-sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-transactions-main-heading {
+  color: #333b69;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-bottom: 8px;
+}
+.add-transactions-description {
+  color: #505887;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-top: 8px;
+}
+.trigger-button-add-transaction {
+  display: flex;
+  align-self: flex-start;
+  border: 0px;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.add-transactions-input-container {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.add-transactions-label {
+  color: #505887;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "inter";
+}
+.add-transactions-input {
+  border: 1px solid #dfeaf2;
+  outline: none;
+  padding: 8px;
+  color: #505887;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-top: 5px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+}
+.add-transaction-inpu-button {
+  border: 0px;
+  width: 410px;
+  background-color: #2d60ff;
+  border-radius: 5px;
+  padding: 8px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "inter";
+  margin-top: 10px;
+  cursor: pointer;
+}
+.success-message {
+  color: #2d60ff;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "inter";
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}

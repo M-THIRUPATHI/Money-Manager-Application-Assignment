@@ -1,0 +1,36 @@
+.tabs-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 1190px;
+}
+.tabs-list-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
+}
+.tabs-button {
+  color: #718ebf;
+  border: 0px;
+  font-size: 18px;
+  font-family: "inter";
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+}
+.tabs-button-active {
+  color: #2d60ff;
+  text-decoration: underline;
+  border: 0px;
+  font-size: 18px;
+  font-family: "inter";
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+}
+.pencil-button-icon {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}

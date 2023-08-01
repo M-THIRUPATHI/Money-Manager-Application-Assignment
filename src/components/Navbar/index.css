@@ -1,0 +1,123 @@
+.navbar-container {
+  min-width: 250px;
+  min-height: 99.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  background-color: #ffffff;
+}
+.money-matter-logo-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.nav-list-items {
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-hover:hover {
+  color: #2d60ff;
+  font-weight: 700;
+  font-family: "inter";
+  font-size: 18px;
+  margin-left: 20px;
+}
+.nav-icons {
+  margin-left: 5px;
+}
+.route-name {
+  color: #505887;
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 18px;
+  margin-left: 20px;
+}
+.nav-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  border: 1px solid #e2e2e2;
+}
+.nav-profile-img {
+  margin-left: 8px;
+}
+.nav-profile-name-container {
+  color: #505887;
+  font-weight: 500;
+  font-family: "inter";
+  font-size: 16px;
+  width: 170px;
+  height: 70px;
+  text-align: center;
+}
+.nav-profile-name {
+  margin-bottom: 3px;
+}
+.nav-profile-last {
+  margin-top: 3px;
+}
+.nav-profile-button {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.popup-logout-container {
+  display: flex;
+  align-items: center;
+  background-color: #cccccc;
+  border-radius: 10px;
+  padding: 30px;
+}
+.popup-logout-description-container {
+  margin-left: 30px;
+}
+.popup-logout-description {
+  color: #333b69;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 22px;
+}
+.popup-logout-content {
+  color: #333b69;
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 18px;
+}
+.popup-logout {
+  background-color: #dc2626;
+  border: 0px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 15px;
+  padding: 8px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.popup-calcel {
+  background-color: transparent;
+  border: 2px solid #333b69;
+  border-radius: 5px;
+  color: #333b69;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px;
+  cursor: pointer;
+}
+.trigger-button {
+  display: flex;
+  align-self: flex-start;
+  border: 0px;
+  background-color: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}

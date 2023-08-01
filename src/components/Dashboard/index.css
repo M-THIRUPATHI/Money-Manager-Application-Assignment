@@ -1,0 +1,166 @@
+.dashboard-main-container {
+  display: flex;
+  background-color: #f5f7fa;
+}
+.add-transactions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1180px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #e2e2e2;
+  max-height: 64px;
+}
+.add-transactions-heading-accounts {
+  color: #343c6a;
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 28px;
+}
+.credit-debit-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1190px;
+  margin: 20px;
+}
+.credit-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  max-height: 100px;
+  background-color: #ffffff;
+}
+.credit-amount {
+  color: #16dbaa;
+  font-weight: 700;
+  font-family: "inter";
+  font-size: 32px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+.credit-heading {
+  color: #718ebf;
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 18px;
+  margin-top: 0px;
+  padding-left: 30px;
+}
+.credit-img {
+  padding: 10px;
+  max-height: 90px;
+}
+.debit-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 540px;
+  max-height: 100px;
+  background-color: #ffffff;
+}
+.debit-amount {
+  color: #fe5c73;
+  font-weight: 700;
+  font-family: "inter";
+  font-size: 32px;
+  margin-bottom: 0px;
+  padding-left: 30px;
+}
+.debit-heading {
+  color: #718ebf;
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 18px;
+  margin-top: 0px;
+  padding-left: 30px;
+}
+.debit-img {
+  padding: 10px;
+  max-height: 90px;
+}
+.last-transaction-heading {
+  color: #333b69;
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-family: "inter";
+}
+.Debit-Credit-Overview {
+  color: #333b69;
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-family: "inter";
+  margin-bottom: 0px;
+}
+.last-transaction-list {
+  list-style-type: none;
+  background-color: #ffffff;
+  max-width: 1190px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-left: 0px;
+}
+.last-transaction-list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  height: 36px;
+}
+.last-transaction-type-img {
+  padding-left: 15px;
+  height: 24px;
+}
+.last-transaction-name {
+  color: #718ebf;
+  font-weight: 600;
+  font-family: "inter";
+  font-size: 17px;
+  width: 200px;
+  text-align: start;
+}
+.last-transaction-category {
+  color: #718ebf;
+  font-weight: 400;
+  font-family: "inter";
+  font-size: 15px;
+  width: 200px;
+  text-align: start;
+}
+.last-transaction-date {
+  color: #718ebf;
+  font-weight: 400;
+  font-family: "inter";
+  font-size: 15px;
+  text-align: start;
+  width: 200px;
+}
+.last-transaction-list-credit {
+  color: #16dbaa;
+  font-weight: 500;
+  font-family: "inter";
+  font-size: 16px;
+  text-align: start;
+  width: 200px;
+}
+.last-transaction-list-debit {
+  color: #fe5c73;
+  font-weight: 500;
+  font-family: "inter";
+  font-size: 16px;
+  text-align: start;
+  width: 200px;
+}
+.last-delete-icon {
+  padding-right: 20px;
+  height: 20px;
+}
+.last-pencil-icon {
+  height: 16px;
+}
