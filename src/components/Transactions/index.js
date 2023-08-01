@@ -87,7 +87,7 @@ const Transactions = () => {
       <Navbar />
       <div>
         <nav className="add-transactions-container">
-          <h1 className="add-transactions-heading-accounts">Accounts</h1>
+          <h1 className="add-transactions-heading-accounts">Transactions</h1>
           <AddTransactions />
         </nav>
         <ul className="tabs-list">

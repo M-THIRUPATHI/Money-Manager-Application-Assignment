@@ -13,26 +13,31 @@
   font-family: "inter";
   font-size: 17px;
 }
+
 .add-transaction-plus-log {
   margin-right: 3px;
 }
+
 .add-transactions-main-container {
   background-color: #cccccc;
   border-radius: 15px;
   padding: 30px;
 }
+
 .add-transactions-sub-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .add-transactions-main-heading {
   color: #333b69;
   font-size: 22px;
   font-weight: 700;
   font-family: "inter";
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
+
 .add-transactions-description {
   color: #505887;
   font-size: 14px;
@@ -40,6 +45,7 @@
   font-family: "inter";
   margin-top: 8px;
 }
+
 .trigger-button-add-transaction {
   display: flex;
   align-self: flex-start;
@@ -49,17 +55,20 @@
   cursor: pointer;
   margin-left: 20px;
 }
+
 .add-transactions-input-container {
   margin-top: 0px;
   display: flex;
   flex-direction: column;
 }
+
 .add-transactions-label {
   color: #505887;
   font-size: 17px;
   font-weight: 700;
   font-family: "inter";
 }
+
 .add-transactions-input {
   border: 1px solid #dfeaf2;
   outline: none;
@@ -72,6 +81,7 @@
   margin-bottom: 14px;
   border-radius: 5px;
 }
+
 .add-transaction-inpu-button {
   border: 0px;
   width: 410px;
@@ -85,12 +95,40 @@
   margin-top: 10px;
   cursor: pointer;
 }
-.success-message {
-  color: #2d60ff;
-  font-size: 18px;
-  font-weight: 900;
-  font-family: "inter";
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+
+@media screen and (max-width: 992px) {
+  .add-transaction-button {
+    padding: 6px;
+  }
+  .add-transaction-text {
+    font-size: 14px;
+  }
+
+  .add-transactions-main-container {
+    padding: 20px;
+  }
+
+  .add-transactions-main-heading {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  .trigger-button-add-transaction {
+    font-size: 20px;
+  }
+
+  .add-transactions-label {
+    font-size: 15px;
+  }
+
+  .add-transactions-input {
+    font-size: 13px;
+  }
+  .add-transaction-inpu-button {
+    max-width: 320px;
+    padding: 7px;
+    color: #ffffff;
+    font-size: 16px;
+  }
 }

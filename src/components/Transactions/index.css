@@ -29,6 +29,20 @@
   background-color: transparent;
   cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+  .tabs-list {
+    max-width: 95%;
+  }
+
+  .tabs-button {
+    font-size: 15px;
+  }
+
+  .tabs-button-active {
+    font-size: 15px;
+  }
+}
+
 .pencil-button-icon {
   border: 0px;
   background-color: transparent;

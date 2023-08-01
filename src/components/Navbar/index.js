@@ -45,103 +45,149 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar-container">
-      <div className="money-matter-logo-container">
+    <>
+      <nav className="navbar-container">
         <img
           src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690635617/Frame_507_pvta39.png"
           alt="website-logo"
-          className="money-matter-logo-img"
+          className="money-matter-logo-img-mobile"
         />
-        <li className="nav-list-items">
-          <Link to="/" className="nav-link ">
+
+        <div className="money-matter-logo-container-desktop">
+          <img
+            src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690635617/Frame_507_pvta39.png"
+            alt="website-logo"
+            className="money-matter-logo-img"
+          />
+          <li className="nav-list-items">
+            <Link to="/" className="nav-link ">
+              <img
+                src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690805088/Vector_stnrzr.png"
+                alt="home-icon"
+                className="nav-icons nav-hover"
+              />
+              <p className="route-name nav-hover">Dashboard</p>
+            </Link>
+          </li>
+          <li className="nav-list-items">
+            <Link to="/transactions" className="nav-link ">
+              <img
+                src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690657597/Glyph_nfrj7p.png"
+                alt="transaction-icon"
+                className="nav-icons nav-hover"
+              />
+              <p className="route-name nav-hover">Transactions</p>
+            </Link>
+          </li>
+          <li className="nav-list-items">
+            <Link to="/profile" className="nav-link">
+              <img
+                src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690657609/user_3_1_rk0yab.png"
+                alt="profle-icon"
+                className="nav-icons nav-hover"
+              />
+              <p className="route-name nav-hover">Profile</p>
+            </Link>
+          </li>
+        </div>
+        <div className="nav-profile-container">
+          <img
+            src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690735571/Avatar_i0ayu4.png"
+            alt="profile-log"
+            className="nav-profile-img"
+          />
+
+          <div className="nav-profile-name-container">
+            <p className="nav-profile-name">{profileDetails.name}</p>
+            <p className="nav-profile-last">{profileDetails.email}</p>
+          </div>
+
+          <div className="popup-container">
+            <Popup
+              modal
+              trigger={
+                <button type="button" className="nav-profile-button">
+                  <img
+                    src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690658722/log-out-01_bmorlu.png"
+                    alt="logout-log"
+                    className="nav-profile-button-icon"
+                  />
+                </button>
+              }
+            >
+              {(close) => (
+                <div className="popup-logout-container">
+                  <img
+                    src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690736126/Group_848_jncvqw.png"
+                    alt="logout-button"
+                    className="popup-logout-log"
+                  />
+                  <div className="popup-logout-description-container">
+                    <p className="popup-logout-description">
+                      Are you sure you want to Logout?
+                    </p>
+                    <p className="popup-logout-content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed
+                    </p>
+                    <button className="popup-logout" onClick={onClickLogout}>
+                      Yes, Logout
+                    </button>
+                    <button className="popup-calcel" onClick={() => close()}>
+                      Cancel
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    className="trigger-button"
+                    onClick={() => close()}
+                  >
+                    <AiOutlineClose className="popup-close-icon" />
+                  </button>
+                </div>
+              )}
+            </Popup>
+          </div>
+        </div>
+      </nav>
+      <div className="money-matter-logo-container-mobile">
+        <img
+          src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690635617/Frame_507_pvta39.png"
+          alt="website-logo"
+          className="money-matter-logo-img-mobile-none"
+        />
+        <li className="nav-list-items-mobile">
+          <Link to="/" className="nav-link">
             <img
               src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690805088/Vector_stnrzr.png"
               alt="home-icon"
-              className="nav-icons nav-hover"
+              className="nav-icons-mobile nav-hover-mobile"
             />
-            <p className="route-name nav-hover">Dashboard</p>
+            <p className="route-name-mobile nav-hover-mobile">Dashboard</p>
           </Link>
         </li>
-        <li className="nav-list-items">
-          <Link to="/transactions" className="nav-link "> 
+        <li className="nav-list-items-mobile">
+          <Link to="/transactions" className="nav-link ">
             <img
               src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690657597/Glyph_nfrj7p.png"
               alt="transaction-icon"
-              className="nav-icons nav-hover"
+              className="nav-icons-mobile nav-hover-mobile"
             />
-            <p className="route-name nav-hover">Transactions</p>
+            <p className="route-name-mobile nav-hover-mobile">Transactions</p>
           </Link>
         </li>
-        <li className="nav-list-items">
+        <li className="nav-list-items-mobile">
           <Link to="/profile" className="nav-link">
             <img
               src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690657609/user_3_1_rk0yab.png"
               alt="profle-icon"
-              className="nav-icons nav-hover"
+              className="nav-icons-mobile nav-hover-mobile"
             />
-            <p className="route-name nav-hover">Profile</p>
+            <p className="route-name-mobile nav-hover-mobile">Profile</p>
           </Link>
         </li>
       </div>
-      <div className="nav-profile-container">
-        <img
-          src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690735571/Avatar_i0ayu4.png"
-          alt="profile-log"
-          className="nav-profile-img"
-        />
-
-        <div className="nav-profile-name-container">
-          <p className="nav-profile-name">{profileDetails.name}</p>
-          <p className="nav-profile-last">{profileDetails.email}</p>
-        </div>
-
-        <div className="popup-container">
-          <Popup
-            modal
-            trigger={
-              <button type="button" className="nav-profile-button">
-                <img
-                  src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690658722/log-out-01_bmorlu.png"
-                  alt="logout-log"
-                  className="nav-profile-button-icon"
-                />
-              </button>
-            }
-          >
-            {(close) => (
-              <div className="popup-logout-container">
-                <img
-                  src="https://res.cloudinary.com/dzscdp79g/image/upload/v1690736126/Group_848_jncvqw.png"
-                  alt="logout-button"
-                  className="popup-logout-log"
-                />
-                <div className="popup-logout-description-container">
-                  <p className="popup-logout-description">
-                    Are you sure you want to Logout?
-                  </p>
-                  <p className="popup-logout-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  </p>
-                  <button className="popup-logout" onClick={onClickLogout}>
-                    Yes, Logout
-                  </button>
-                  <button className="popup-calcel" onClick={() => close()}>
-                    Cancel
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  className="trigger-button"
-                  onClick={() => close()}
-                >
-                  <AiOutlineClose className="popup-close-icon" />
-                </button>
-              </div>
-            )}
-          </Popup>
-        </div>
-      </div>
-    </nav>
+    </>
   );
 };
 export default withRouter(Navbar);

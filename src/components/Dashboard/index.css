@@ -2,23 +2,26 @@
   display: flex;
   background-color: #f5f7fa;
 }
+
 .add-transactions-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 1180px;
+  min-width: 95%;
   background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid #e2e2e2;
   max-height: 64px;
 }
+
 .add-transactions-heading-accounts {
   color: #343c6a;
   font-weight: 600;
   font-family: "inter";
   font-size: 28px;
 }
+
 .credit-debit-container {
   display: flex;
   justify-content: space-between;
@@ -26,6 +29,7 @@
   width: 1190px;
   margin: 20px;
 }
+
 .credit-container {
   display: flex;
   justify-content: space-between;
@@ -34,6 +38,7 @@
   max-height: 100px;
   background-color: #ffffff;
 }
+
 .credit-amount {
   color: #16dbaa;
   font-weight: 700;
@@ -54,6 +59,7 @@
   padding: 10px;
   max-height: 90px;
 }
+
 .debit-container {
   display: flex;
   justify-content: space-around;
@@ -89,6 +95,7 @@
   font-weight: 600;
   font-family: "inter";
 }
+
 .Debit-Credit-Overview {
   color: #333b69;
   font-size: 22px;
@@ -97,6 +104,7 @@
   font-family: "inter";
   margin-bottom: 0px;
 }
+
 .last-transaction-list {
   list-style-type: none;
   background-color: #ffffff;
@@ -133,6 +141,7 @@
   width: 200px;
   text-align: start;
 }
+
 .last-transaction-date {
   color: #718ebf;
   font-weight: 400;
@@ -141,6 +150,7 @@
   text-align: start;
   width: 200px;
 }
+
 .last-transaction-list-credit {
   color: #16dbaa;
   font-weight: 500;
@@ -163,4 +173,99 @@
 }
 .last-pencil-icon {
   height: 16px;
+}
+@media screen and (max-width: 992px) {
+  .dashboard-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .add-transactions-container {
+    min-width: 90%;
+  }
+  .add-transactions-heading-accounts {
+    font-size: 20px;
+  }
+  .credit-debit-container {
+    max-width: 95%;
+    margin: 20px;
+  }
+  .credit-container {
+    max-width: 200px;
+    max-height: 70px;
+  }
+  .credit-amount {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .credit-heading {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .credit-img {
+    padding: 5px;
+    max-height: 60px;
+  }
+  .debit-container {
+    max-width: 200px;
+    max-height: 70px;
+  }
+  .debit-amount {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .debit-heading {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .debit-img {
+    padding: 5px;
+    max-height: 60px;
+  }
+  .last-transaction-heading {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .Debit-Credit-Overview {
+    font-size: 20px;
+  }
+  .last-transaction-list {
+    max-width: 95%;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  .last-transaction-list-items {
+    max-height: 30px;
+  }
+  .last-transaction-type-img {
+    padding-left: 8px;
+    height: 18px;
+    padding-right: 8px;
+  }
+  .last-transaction-name {
+    font-size: 12px;
+    max-width: 90px;
+  }
+  .last-transaction-category {
+    font-size: 12px;
+    max-width: 110px;
+  }
+  .last-transaction-date {
+    font-size: 12px;
+    max-width: 60px;
+  }
+  .last-transaction-list-credit {
+    font-size: 12px;
+    max-width: 70px;
+  }
+  .last-transaction-list-debit {
+    font-size: 12px;
+    max-width: 70px;
+  }
+  .last-delete-icon {
+    padding-right: 10px;
+    height: 14px;
+  }
+  .last-pencil-icon {
+    height: 14px;
+  }
 }

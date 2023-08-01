@@ -31,3 +31,27 @@
   font-weight: 400;
   padding-left: 10px;
 }
+
+@media screen and (max-width: 992px) {
+  .profile-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .profile-details-img {
+    display: none;
+  }
+  .profile-details-name-container {
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+  }
+  .profile-details-your-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .profile-details-description {
+    font-size: 13px;
+    padding-left: 8px;
+  }
+}
